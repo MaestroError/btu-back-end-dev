@@ -58,6 +58,10 @@ do {
             printMyQuote($Quotes[$index], $index+1);
             break;
 
+        case 0:
+            echo "Bye! \n";
+            break;
+
         default:
             // Warn if user gave disallowed input
             echo "Command not recognized, allowed only 0, 1, 2 and 3 \n";
