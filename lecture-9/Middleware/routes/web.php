@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return "Home Page";
 });
 
-Route::middleware('auth')->get("/protected-route", function () {
-    return "Nice, you are logged in!";
+Route::middleware('secure')->get("/protected-route", function () {
+    return "Nice, you have right token!";
 });
